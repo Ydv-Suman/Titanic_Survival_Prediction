@@ -1,0 +1,68 @@
+## 🛳️ Titanic Survival Prediction (Machine Learning Project)
+## 📘 Overview
+
+This project predicts whether a passenger survived the Titanic disaster using machine learning.
+We use multiple models — Random Forest, XGBoost, and Gradient Boosting — along with preprocessing pipelines and GridSearchCV to tune hyperparameters and improve accuracy.
+
+---
+
+## 🧩 Dataset
+```
+Train dataset: train.csv
+Test dataset: test.csv
+Target column: Survived
+ID column: PassengerId
+```
+You can get the dataset from Kaggle - Titanic: Machine Learning from Disaster.
+
+---
+
+## ⚙️ Feature Engineering
+```
+Different feature engineering techniques used:
+Handle missing values in Age, Fare, and Embarked.
+Extract Title from Name (e.g., Mr, Miss, Mrs, etc.).
+Convert Sex to numeric (0 = male, 1 = female).
+Create FamilySize = SibSp + Parch + 1.
+Create IsAlone (1 if traveling alone, 0 otherwise).
+Convert categorical variables (Embarked, Title) using OneHotEncoder.
+Scale numerical features using StandardScaler.
+```
+
+---
+
+## 🧠 Models Used
+```
+RandomForestClassifier
+XGBClassifier
+GradientBoostingClassifier
+Each model is wrapped in a Pipeline with preprocessing steps.
+```
+
+---
+
+## 🔍 Hyperparameter Tuning (GridSearchCV)
+## 📊 Model Comparison
+```
+A comparison graph is plotted to visualize accuracy for:
+Random Forest
+XGBoost
+Gradient Boosting
+```
+---
+
+🧰 Tools & Libraries
+```
+Python
+Pandas, NumPy
+Scikit-learn
+XGBoost
+RandomForestClassifier
+GradientBoostingClassifier
+Matplotlib + Seaborn
+
+---
+
+## Clone the repo
+git clone https://github.com/Ydv-Suman/Titanic_Survival_Prediction.git
+cd Titanic_Survival_Prediction
